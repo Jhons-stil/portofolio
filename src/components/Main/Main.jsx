@@ -26,7 +26,7 @@ const Main = () => {
             </Col>
             <Col md="6" className="text-center">
               <img
-                src="../public/profile.jpeg"
+                src="/profile.jpeg"
                 alt="Profile"
                 className="img-fluid rounded-circle shadow"
               />
