@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav, NavItem, NavLink, Navbar, Container } from "reactstrap";
+import "./Navbar.css";
 
 const Navigation = () => {
+  const [activeNav, setActiveNav] = useState("#proyek");
   return (
     <Navbar
       color="white"
@@ -16,17 +18,29 @@ const Navigation = () => {
         </div>
         <Nav className="ms-auto" navbar>
           <NavItem>
-            <NavLink href="#sertifikat" className="fw-semibold px-3 text-dark">
+            <NavLink
+              href="#sertifikat"
+              onClick={() => setActiveNav("#sertifikat")}
+              className={`fw-semibold px-3 text-dark ${activeNav === "#sertifikat" ? "Active" : ""}`}
+            >
               Sertifikat
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pengalaman" className="fw-semibold px-3 text-dark">
+            <NavLink
+              href="#pengalaman"
+              onClick={() => setActiveNav("#pengalaman")}
+              className={`fw-semibold px-3 text-dark ${activeNav === "#pengalaman" ? "Active" : ""}`}
+            >
               Pengalaman
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#proyek" className="fw-bold px-3 text-primary">
+            <NavLink
+              href="#proyek"
+              onClick={() => setActiveNav("#proyek")}
+              className={`fw-semibold px-3 text-dark ${activeNav === "#proyek" ? "Active" : ""}`}
+            >
               Proyek
             </NavLink>
           </NavItem>
