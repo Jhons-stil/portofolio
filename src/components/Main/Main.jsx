@@ -18,7 +18,7 @@ const Main = () => {
                 color="primary"
                 size="lg"
                 className="rounded-pill px-4 shadow-sm"
-                href="../public/CV-ATS.pdf"
+                href="/CV-ATS.pdf"
                 rel="noopener noreferrer"
               >
                 Lihat CV Saya
