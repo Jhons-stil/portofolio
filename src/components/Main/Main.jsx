@@ -20,6 +20,7 @@ const Main = () => {
                 className="rounded-pill px-4 shadow-sm"
                 href="/CV-ATS.pdf"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 Lihat CV Saya
               </Button>
